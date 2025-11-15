@@ -88,7 +88,7 @@ const ReviewPage: React.FC = () => {
 
       console.log("Sending PDF to Python backend...");
 
-      const response = await fetch("http://localhost:8080/extract-pdf", {
+      const response = await fetch("https://ai-project-backend-fhr3.onrender.com/extract-pdf", {
         method: "POST",
         body: formData,
       });
